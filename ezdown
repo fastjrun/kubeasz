@@ -82,9 +82,9 @@ function logger() {
 
 function download_docker() {
   if [[ "$REGISTRY_MIRROR" == CN ]];then
-    DOCKER_URL="https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/static/stable/x86_64/docker-${DOCKER_VER}.tgz"
+    DOCKER_URL="https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/static/stable/aarch64/docker-${DOCKER_VER}.tgz"
   else
-    DOCKER_URL="https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKER_VER}.tgz"
+    DOCKER_URL="https://download.docker.com/linux/static/stable/aarch64/docker-${DOCKER_VER}.tgz"
   fi
 
   if [[ -f "$BASE/down/docker-${DOCKER_VER}.tgz" ]];then
